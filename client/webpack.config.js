@@ -119,7 +119,9 @@ module.exports = {
         alias: {
             // Some old libraries still use an old specific version of core-js
             // Redirect the imports of these libraries to the newer core-js
-            'core-js/es6': 'core-js/es'
+            'core-js/es6': 'core-js/es',
+            "react": "preact/compat",
+            "react-dom": "preact/compat"
         }
     },
     // Configuration for webpack-dev-server
